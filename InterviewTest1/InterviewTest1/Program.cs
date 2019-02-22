@@ -86,7 +86,7 @@ namespace InterviewTest1
                     }
                 }
 
-                Console.WriteLine("Do you want to continue using the app?");
+                Console.WriteLine("Do you want to continue using the app (Yes/No)?");
                 answer = Console.ReadLine();
                 isContinueUsingApp = MainProcess.Instance.IsAnsweringContinueUseApp(answer);
             }           

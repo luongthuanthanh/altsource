@@ -94,8 +94,8 @@ namespace InterviewTest1
 
         public void CalculateOrderSupplier()
         {
-            HelperForDisplay(ClothesChooseAtSupplier, true);
-            var sumPrice = ClothesChooseAtSupplier.Sum(x => x.Sell());
+            HelperForDisplay(ClothesChooseAtSupplier, false);
+            var sumPrice = ClothesChooseAtSupplier.Sum(x => x.Buy());
             var quantity = ClothesChooseAtSupplier.Count();
 
             Console.WriteLine("You buy: " + quantity + " clothes");
@@ -125,7 +125,7 @@ namespace InterviewTest1
 
             ClothesChooseAtSupplier.Add(clothes);
 
-            Console.WriteLine("You choose clothes :" + clothes.Show(true));
+            Console.WriteLine("You choose clothes :" + clothes.Show(false));
         }
 
         #region Action Buy
